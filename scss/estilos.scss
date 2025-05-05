@@ -1,0 +1,583 @@
+//1.PATRON DE COLORES
+
+//2.MODIFICANDO VARIABLES DE BOOSTRAP
+
+$navbar-nav-link-padding-x: 5rem;
+$navbar-padding-y: 3.5rem;
+$navbar-dark-color: gold;
+$accordion-border-color: none;
+$accordion-button-active-color: gold;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-active-color: white;
+$accordion-bg: white;
+$accordion-button-active-bg: black;
+
+@import "../libs/boostrap/scss/bootstrap.scss";
+
+
+//3.VARIABLES PERSOALIZADO POR TI
+
+.container {
+    margin-top: 20%;
+    //border: solid 2px red;
+    text-align: center;
+    height: 20vh;
+    align-items: center;
+
+}
+
+.fondo {
+    //border: solid 2px red;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    background: url("../img/fondo2.jpg");
+    background-position: center;
+}
+
+.display-1 {
+    font-family: 'titulo';
+    color: rgb(252, 251, 241);
+    font-size: 7vh;
+    text-align: center;
+    padding-top: 4.5%;
+    transform-style: preserve-3d;
+    animation: watercolor 3s ease-out;
+}
+
+@keyframes watercolor {
+    0% {
+        transform: translateY(0) rotateX(0) scale(1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(10px) rotateX(15deg) scale(1.01);
+
+    }
+}
+
+
+//importar letras
+@font-face {
+    font-family: 'titulo';
+    src: url(../fonts/portada.ttf);
+}
+
+@font-face {
+    font-family: 'titulo-nav';
+    src: url(../fonts/titulo-nav.ttf);
+}
+
+@font-face {
+    font-family: 'cuerpo';
+    src: url(../fonts/cuerpo.ttf);
+}
+
+@font-face {
+    font-family: 'reloj';
+    src: url(../fonts/digital.ttf);
+}
+
+.container::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+
+
+.navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light {
+    height: 10vh;
+    position: sticky;
+    
+}
+
+nav {
+    //border: solid red 2px;
+    border-radius: 5px;
+    font-size: 2.9vw;
+    align-items: center;
+    height: 11rem;
+    padding-top: 2%;
+    background-color: black;
+}
+
+.container-fluid {
+    //border: solid 2px yellowgreen;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.931);
+    height: 7rem;
+
+}
+
+div a.navbar-brand {
+    //border: solid 2px brown;
+    padding: 0;
+    margin-left: 2%;
+}
+
+.collapse.navbar-collapse {
+    //border: solid 2px blue;
+    margin-right: 2%;
+    margin-left: 1%;
+    padding-left: 2%;
+    padding-right: 0%;
+}
+
+div ul li.nav-item {
+    //border: solid 2px pink;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'titulo-nav';
+    align-items: center;
+    width: 80%;
+}
+
+div ul li.nav-item a.nav-link {
+    //border: solid 2px rgb(26, 0, 128);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.727);
+    -webkit-text-stroke: black 1px;
+    padding-right: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+div ul li.nav-item a.nav-link.active {
+    color: gold;
+}
+
+div ul li.nav-item a.nav-link:hover {
+    color: gold;
+    -webkit-text-stroke: black 1px;
+}
+
+.d-flex {
+    //border: solid 2px red;
+    margin-left: 4%;
+    padding: 0;
+    
+}
+
+.d-flex button {
+    background-color: rgba(255, 255, 255, 0.727);
+    color: black;
+    border-color: black;
+}
+
+.d-flex button:hover {
+    color: black;
+    background-color: gold;
+    border-color: black;
+}
+
+svg:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+.container2 {
+    padding-top: 5%;
+    //border: solid 2px red;
+    text-align: center;
+    height: 20vh;
+    align-items: center;
+    background-color: white;
+}
+
+.form-control.me-2 {
+    background-color: rgba(255, 255, 255, 0.727);
+    border: black;
+}
+
+h1 {
+    font-family: 'titulo';
+}
+
+.container3 {
+    //border: solid black 2px;
+    height: 90vh;
+}
+
+.col {
+    //border: solid 2px blue;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.931);
+}
+
+.muerto {
+    height: 90%;
+    width: 80%;
+    //border: solid red 2px;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+
+.silueta {
+    width: 100%;
+    height: 100%;
+}
+
+.historia {
+    font-family: 'cuerpo';
+    padding: 2%;
+}
+
+.inicio {
+    margin-left: 47%;
+    border-radius: 4px;
+    background-color: rgb(252, 251, 241);
+    padding: 8px;
+}
+
+.inicio:hover {
+    background-color: gold;
+}
+
+.button {
+    background-color: rgb(252, 251, 241);
+}
+
+.button:hover {
+    background-color: gold;
+}
+
+.ini {
+    text-decoration: none;
+    color: black;
+    font-family: 'cuerpo';
+}
+
+.ini:hover {
+    font-weight: bold;
+}
+
+//lampara
+.bi.bi-lamp {
+    color: white;
+    margin-right: 2%;
+}
+
+.bi.bi-lamp:hover {
+    color: black;
+}
+
+.bi.bi-key-fill {
+    color: rgba(255, 255, 255, 0.727);
+}
+
+.bi.bi-key-fill:hover {
+    color: gold;
+}
+
+.accordion-item {
+    font-family: 'cuerpo';
+}
+
+.accordion-header {
+    font-family: 'titulo';
+    padding: 1%;
+    //border: 1px solid blue;
+    //font-size: 40vw;
+
+}
+.accordion-body{
+    display: flex;
+    gap: 1%;
+}
+.accordion-button.collapsed {
+    font-size: 2vw;
+   
+}
+
+.accordion-button.collapsed:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .display-1 {
+        font-family: 'titulo';
+        color: rgb(252, 251, 241);
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .container {
+        height: 12vh;
+    }
+
+    .fondo {
+        height: 70vh;
+        //border: 2px solid pink;
+    }
+
+    .collapse.navbar-collapse {
+        background-color: rgb(252, 251, 241);
+        font-size: 6vw;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light {
+        height: 10vh;
+        position: relative;
+        //margin-bottom: 14%;
+        //border: solid 2px blue;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        height: 2rem;
+        margin: 0;
+        padding-top: 0%;
+    }
+
+    .container-fluid {
+        height: 10vh;
+        margin-bottom: 4%;
+        margin: 0;
+
+    }
+
+    .bi.bi-key-fill {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .container2 {
+        padding-top: 7%;
+        //border: solid 2px red;
+        text-align: center;
+        height: 13vh;
+        //margin-top: 1%;
+    }
+
+    .descripcion {
+        //border: solid 2px black;
+        text-align: justify;
+        padding: 2%;
+        font-family: 'cuerpo';
+        background-color: rgb(252, 251, 241);
+    }
+
+    .titulo {
+        font-size: larger;
+    }
+    .imagen_escape{
+        width: 40%;
+        height: 42%;
+    }
+    .imagen_escape_dos{
+        width: 40%;
+        height: 42%;
+    }
+    .escape{
+        width: 100%;
+        height: 100%;
+    }
+    .accordion-body{
+        display: block;
+    }
+    
+
+}
+
+.navbar-toggler {
+    background-color: gold;
+    margin-right: 2%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 217, 0, 0.428);
+}
+
+h4{
+    font-family: 'cuerpo';
+}
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    .display-1 {
+        font-family: 'titulo';
+        color: rgb(252, 251, 241);
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .container {
+        height: 12vh;
+    }
+
+    .fondo {
+        height: 70vh;
+        //border: 2px solid pink;
+    }
+
+    .collapse.navbar-collapse {
+        background-color: rgb(252, 251, 241);
+        //background-color: rgba(255, 0, 0, 0.337);
+        font-size: 5vw;
+        align-items: center;
+        padding: 0;
+        height: auto !important;
+        padding: 1.5rem 1rem;
+        transition: max-height 0.3s ease;
+        overflow-y: visible !important;
+    }
+
+    .accordion.accordion-flush {
+        margin-top: 2%;
+    }
+
+    .navbar.sticky-top.navbar-expand-lg.navbar-light.bg-light {
+        height: 10vh;
+        position: relative;
+        //margin-bottom: 14%;
+        //border: solid 2px blue;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        height: 2rem;
+        margin: 0;
+        padding-top: 0%;
+    }
+
+    .container-fluid {
+        height: 12vh;
+        margin-bottom: 4%;
+        margin: 0;
+
+    }
+
+    .bi.bi-key-fill {
+        font-size: 0.7rem;
+        padding: 0.20rem 0.45rem;
+    }
+
+    .container2 {
+        padding-top: 5%;
+        //border: solid 2px red;
+        text-align: center;
+        height: 13vh;
+        
+        //margin-top: 1%;
+    }
+
+    .descripcion {
+        //border: solid 2px black;
+        text-align: justify;
+        padding: 2%;
+        font-family: 'cuerpo';
+        background-color: rgb(252, 251, 241);
+    }
+
+    .titulo {
+        font-size: x-large;
+    }
+
+    .imagen_escape{
+        width: 50%;
+        height: 52%;
+    }
+    .imagen_escape_dos{
+        width: 50%;
+        height: 52%;
+    }
+    .escape{
+        width: 100%;
+        height: 100%;
+    }
+    .accordion-body{
+        display: block;
+    }
+
+}
+
+.formulario{
+    font-family: 'cuerpo';
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* dos columnas del mismo tamaño */
+    gap: 1rem; 
+    //max-width: 200px;
+    margin: 0 auto;
+}
+.campo {
+    display: flex;
+    flex-direction: column; /* cambia a 'row' si querés label e input en la misma línea */
+  }
+.campo_dos{
+    flex-direction: column;
+}
+.campo_tres{
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen_escape{
+    width: 15%;
+    height: 18%;
+}
+.imagen_escape_dos{
+    width: 18%;
+    height: 14%;
+}
+.escape{
+    width: 100%;
+    height: 100%;
+}
+.accordion-body-dos{
+    padding: 1%;
+}
+
+table{
+    align-items: center;
+    width: 95%;
+    margin: 2%;
+    padding: 1%;
+
+    border: solid 2px black;
+}
+
+th{
+    padding: auto;
+    align-items: center;
+    text-align: center;
+    border: solid 1px black;
+}
+
+td{
+    padding: auto;
+    align-items: center;
+    text-align: center;
+    border: solid 1px black;
+    font-family: 'cuerpo';
+    
+}
+
+.confir{
+    font-family: 'cuerpo';
+    margin: 2%;
+}

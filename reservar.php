@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESCAPE ROOM</title>
     <link href="css/estilos.css" rel="stylesheet">
-    <link rel="icon" href="./img/Designer (1).ico">
+    <link rel="icon" href="./img/interrogacion.ico">
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         <div class="container2">
             <h4> HAZ TU RESERVA AHORA </h4>
         </div>
-        <form action="" method="POST" id="formulario" class="formulario">
+        <form action="conexion.php" method="POST" id="formulario" class="formulario">
             <div class="campo">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Nombre"> 
@@ -100,7 +100,7 @@
             <div class="campo">
             <label for="tipo">Elige el escape room:</label>
         
-        <select id="tipo">
+        <select id="tipo" name="tipo" required>
             <option value="1">ASILO DE ARKHAM</option>
             <option value="2">EL TESORO DE LOS INCAS</option>
             <option value="3">JEDIS CONTRA EL IMPERIO</option>
@@ -112,22 +112,22 @@
 
         <div class="campo">
         <label for="hora">A que hora será:</label>
-        <select id="hora">
-            <option value="10">10:00</option>
-            <option value="11">11:00</option>
-            <option value="12">12:00</option>
-            <option value="13">13:00</option>
-            <option value="17">17:00</option>
-            <option value="18">18:00</option>
-            <option value="19">19:00</option>
-            <option value="20">20:00</option>
+        <select id="hora" name="hora" required>
+            <option value="10" id="10">10:00</option>
+            <option value="11" id="11">11:00</option>
+            <option value="12" id="12">12:00</option>
+            <option value="13" id="13">13:00</option>
+            <option value="17" id="17">17:00</option>
+            <option value="18" id="18">18:00</option>
+            <option value="19" id="19">19:00</option>
+            <option value="20" id="20">20:00</option>
         </select>
         </div>
         <br><br>
 
         <div class="campo">
         <label for="fecha">Fecha:</label>
-        <input type="date" id="date">
+        <input type="date" id="date" name="fecha" required>
         <p><sub>(De lunes a sábado)</sub></p>
         </div> 
         <br><br>
@@ -145,7 +145,7 @@
         <br>
 
         <div class="campo_tres">
-        <button class="button" type="submit">RESERVAR</button>
+        <button class="button" type="submit" id="boton_reservar" >RESERVAR</button>
         </div>
 
         </form>
@@ -153,5 +153,8 @@
 
     <script src="libs/boostrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/prueba.js"></script>
+    <script src="js/validacion.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/restriccion_hora.js"></script>
 </body>
 </html>
