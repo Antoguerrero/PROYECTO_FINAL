@@ -167,21 +167,21 @@ if (width <= 760) {
 
         historia.innerHTML = `
     <p> Buenas noches.<br> Le contactamos de manera urgente ya que ha habido un asesinato a las 
-    afueras de la ciudad y es preciso resolverlo esta misma noche y por eso acudimos a usted, 
+    afueras de la ciudad y es preciso resolverlo esta misma noche. Por eso acudimos a usted, 
     el mejor detective de la ciudad. 
     <br>
     Todos los sospechosos se encuentran en el lugar del crimen. Allí podrá interrogarlos.<br>
     Su misión es clara: Investigar y adivinar quién mató al Sr.Penny, con qué y por qué. Tiene toda la noche
-    para salir de alli con el o los cupables.<br>
+    para salir de allí con el o los cupables.<br>
     Mucha suerte...estará solo.<br><br>
     <i>"30 minutos más tarde...llega al lugar del crimen, una mansión grande, antigua pero elegante, en medio del
     bosque, la envuelve un silencio abrumador... <br><br>
-    Le recibe uno de los criados, le comenta que todos los sospechos estan encerrados en la biblioteca.
+    Le recibe uno de los criados, le comenta que todos los sospechos están recluidos en la sala de estar.
     El cadaver está intacto en el comedor, donde sucedió todo. Le lleva hasta allí y en la puerta usted le dice:" </i>
-    -Encierrese en la biblioteca con los demás, hasta que se demuestre lo contrario usted también es sospechoso.-"
+    -Vaya a la sala de estar con los demás, hasta que se demuestre lo contrario usted también es sospechoso.-"
     <br><br>
-    <i>"Entra en el comedor oscuro y se cierra la puerta, parece que se necesita una llave para salir, esta encerrado y 
-    por lo que le han comentado los invitados solo estuvieron en el comedor, asi que aquí tienen que estar todas las
+    <i>"Entra en el comedor oscuro y se cierra la puerta, parece que se necesita una llave para salir, está encerrado y 
+    por lo que le han comentado los invitados solo estuvieron en el comedor, así que aquí tienen que estar todas las
     respuestas..."</i><br>
     <i> "Lo mejor será que encienda la luz..."</i>
     </p>
@@ -242,7 +242,7 @@ if (width <= 760) {
     `;
             pista2.addEventListener('click', function () {
                 if (!dar_herida) {
-                    historia.innerHTML = '<i>"Aquí hay algo pero veamos la causa de la muerte primero." </i>';
+                    historia.innerHTML = '<i>"Aquí hay algo, pero veamos la causa de la muerte primero." </i>';
                 }
             })
             //Colocar pista
@@ -251,7 +251,7 @@ if (width <= 760) {
             silueta.appendChild(herida);
             herida.addEventListener('click', function () {
                 historia.innerHTML = `<i> No tiene heridas físicas, no hay sangre por ningún lado, pero
-            esta muerto, ¿cúal habrá sido la causa de la muerte entonces?<br> Veamos si hay algo más por aquí`;
+            está muerto, ¿cúal habrá sido la causa de la muerte entonces?<br> Veamos si hay algo más por aquí`;
                 dar_herida = true;
                 herida.style.color = 'white';
                 if (dar_herida) {
@@ -266,7 +266,7 @@ if (width <= 760) {
 
             luz.style.background = "rgb(252, 251, 241)";
 
-            historia.innerHTML = `"¡Ahí está el cadaver! <br> Tendré que inspeccionarle, a ver si encuentro algo importante."`;
+            historia.innerHTML = `"¡Ahí está el cadaver! <br> Tendré que inspeccionarlo, a ver si encuentro algo importante."`;
 
 
             //Cambiar cursor a lupa
@@ -578,7 +578,7 @@ if (width <= 760) {
                         //guardar en el cuaderno
                         anotar.addEventListener('click', function () {
                             pista_lista_invitados = true;
-                            historia.innerHTML = `<i>"A partir de ahora podré ver todo lo que anote en el cuaderno para que no se me olvide"</i>.<br><br>
+                            historia.innerHTML = `<i>"A partir de ahora podré ver todo lo que anote en el cuaderno para que no se me olvide."</i><br><br>
                     <button id="ver_cuaderno" class="button" type="submit">VER CUADERNO</button> `;
 
                             //Ver cuaderno
@@ -619,23 +619,23 @@ if (width <= 760) {
                 pista2.style.paddingTop = '38%';
                 pista2.style.color = 'white';
                 pista2.style.rotate = '11deg';
-                historia.innerHTML = `"Al parecer esta llave abre dos cajones"`;
+                historia.innerHTML = `<i>"Al parecer esta llave abre dos cajones."</i>`;
 
                 pista2.addEventListener('click', function () {
 
                     historia.innerHTML = `<i>" Una carta...</i><br> <br>
                 <div id="nota_amor">
-                '- 1 de marzo 1981 -<br>
+                ' - 1 de marzo 1981 -<br>
                 Desde aquel día en que nos conocimos, encajamos como Dos piezas de un puzzle,
                 me enamoré perdidamente de ti. Pero desde hace Una semana te noto diferente, algo 
                 ha cambiado en ti. Llevo Cinco días dudando sobre si me quieres de verdad o no...
                 Y ya no puedo seguir así. Creo que sé lo que pasa. Reúnete conmigo el martes a las Seis
-                donde tu ya sabes. He cambiado la combinación, si lees bien, la obtendrás. Nos vemos pronto.
+                donde tú ya sabes. He cambiado la combinación, si lees bien, la obtendrás. Nos vemos pronto.
                 Te quiero, Penny.
                 </div><br>
-                <i>Parece que el Sr.Penny tenía un romance con alguien de los invitados, y al parecer hay
+                <i>Parece que el Sr.Penny tenía un romance con alguno de los invitados, y al parecer hay
                 una sala escondida con una clave, pero ¿dónde? Tendré que seguir investigando, al menos ya 
-                tengo una pista de lo que puede ser la clave de la puerta, mejor que lo anote"</i>.<br><br>
+                tengo una pista de lo que puede ser la clave de la puerta, será mejor que lo anote"</i>.<br><br>
 
                 <button id="anotar2" class="button" type="submit">ANOTAR</button> <br><br>
 
@@ -693,7 +693,7 @@ if (width <= 760) {
             nota.remove();
             invitacion.remove();
             caja.remove();
-            historia.innerHTML = '<i>"Veamos que más hay por aquí"</i>';
+            historia.innerHTML = '<i>"Veamos que más hay por aquí."</i>';
             col.style.backgroundImage = "url('img/salon.jpeg')";
             col.style.backgroundPosition = 'left';
             col2.style.background = "none";
@@ -897,7 +897,7 @@ if (width <= 760) {
 
 
         function volver_al_salon2(historia) {
-            historia.innerHTML = `<i>"Esta pista ya la he anotado en el cuaderno, debería investigar sobre más cosas."</i><br><br>
+            historia.innerHTML = `<i>"Esta pista ya la he anotado en el cuaderno, debería investigar sobre otras cosas."</i><br><br>
         <button id="ver_salon" class="button" type="submit">INVESTIGAR SALÓN</button>`;
             const ver_salon = document.getElementById('ver_salon');
             ver_salon.addEventListener('click', function () {
@@ -1001,7 +1001,7 @@ if (width <= 760) {
                     contador_imagen++;
                     imagen.style.marginTop = '10%';
                     imagen.style.transform = "rotate(10deg)";
-                    contar.textContent = 'Parece que está un poco descolgado... Como si alguien lo hubiera manipulado antes. A ver si puedo descolgarlo entero. ';
+                    contar.textContent = 'Parece que está un poco descolgado... Como si alguien lo hubiera manipulado antes. A ver si puedo descolgarlo del todo. ';
                     if (contador_imagen === 2) {
                         imagen.style.transform = "rotate(-15deg)";
                         setTimeout(function () {
@@ -1287,8 +1287,8 @@ if (width <= 760) {
                 muerto.appendChild(pintalabios);
 
                 veneno.addEventListener('click', function () {
-                    historia.innerHTML = `<i> " Un bote que pone veneno, con algun resto de
-                líquido verde, seguramente este sea la causa de la muerte
+                    historia.innerHTML = `<i> " Un bote que pone veneno, con algún resto de
+                líquido verde, seguramente esta sea la causa de la muerte
                 y por eso el cuerpo no tenía heridas ni restos de sangre."<br><br>
                 <div id="imagen_veneno">
 
@@ -1313,7 +1313,7 @@ if (width <= 760) {
                 }, { once: true });
 
                 pintalabios.addEventListener('click', function () {
-                    historia.innerHTML = `<i> " El carmín que he estado siguiedo el rastro anteriormente.<br>
+                    historia.innerHTML = `<i> " El carmín del que he estado siguiedo el rastro anteriormente.<br>
                 Pero ni rastro del dinero que decía Penny...alguien lo habrá cogido."<br><br>
                 <div id="imagen_pintalabios">
 
@@ -1355,13 +1355,13 @@ if (width <= 760) {
         function cartas(pistaX) {
             if (pistaX.id === 'tres') {
                 historia.innerHTML = `<br><br><div id='carta_tres'> ' - 1 de enero 1981 - <br>
-            Hola cariño, ya han pasado 6 meses desde que empezó nuestra historia. Estoy muy enamorado de ti que nos
-            se te olvide
+            Hola cariño, ya han pasado 6 meses desde que empezó nuestra historia. Estoy muy enamorado de ti, que no
+            se te olvide,
             pero tengo que contarte algo. Mi mujer ha caído enferma y los médicos no saben por qué es, cada día
-            que pasa está peor asique lo que hablamos de irnos de viaje habrá que postponerlo, tengo que cuidar de ella
+            que pasa está peor así que lo que hablamos de irnos de viaje habrá que postponerlo, tengo que cuidar de ella
             y además creo que sospecha algo, ya me ha hecho unas cuantas preguntas incómodas.<br>
-            Vamos a darnos unos días que se relaje el ambiente y se mejore y nos volvemos a ver.<br>
-            No te enfades por favor, comprendelo, no puedo hacer otra cosa, te quiero.'
+            Vamos a darnos unos días que se relaje el ambiente y se mejore y entonces volveremos a vernos.<br>
+            No te enfades por favor, compréndelo, no puedo hacer otra cosa, te quiero.'
             </div>  <br> 
             <button id="anotar" class="button" type="submit">ANOTAR</button>`
                     ;
@@ -1374,7 +1374,7 @@ if (width <= 760) {
 
                     } else {
                         carta_amor_tres = true;
-                        carta_tres.innerHTML = ' - 1 de enero 1981 - // Carta donde cuenta que su mujer a muerto, se dan un tiempo';
+                        carta_tres.innerHTML = ' - 1 de enero 1981 - // Carta donde cuenta que su mujer ha enfermado, se dan un tiempo.';
                         cuaderno.appendChild(carta_tres);
                         alert('Carta anotada');
                         historia.innerHTML = '<i>"Sigamos con la siguiente carta."</i>';
@@ -1405,7 +1405,7 @@ if (width <= 760) {
 
                     } else {
                         carta_amor_cuatro = true;
-                        carta_cuatro.innerHTML = ' - 9 de febrero 1981 - // Carta donde cuenta que la mujer fallece y quiere un reencuentro';
+                        carta_cuatro.innerHTML = ' - 9 de febrero 1981 - // Carta donde cuenta que la mujer fallece y quiere un reencuentro.';
                         cuaderno.appendChild(carta_cuatro);
                         alert('Carta anotada');
                         historia.innerHTML = '<i>"Sigamos con la siguiente carta."</i>';
@@ -1418,9 +1418,9 @@ if (width <= 760) {
             } else if (pistaX.id === 'cinco') {
                 historia.innerHTML = `<br><br><div id='carta_dos'> ' - 7 de julio 1980 - <br>
             Esta es la primera carta que te escribo desde que empezamos lo nuestro hace dos semanas.<br>
-            Estoy algo nervioso porque me siento mal por esto que le estoy haciendo a mi mujer pero no se que me pasa,
-            cuando estoy contigo, me siento especial, me olvido de todos los problemas de mi vida
-            y por eso es que no me arrepiento de nada. Gracias por hacerme sentir así, tengo muchas ganas de volver a verte la semana que
+            Estoy algo nervioso porque me siento mal por esto que le estoy haciendo a mi mujer pero no sé que me pasa,
+            cuando estoy contigo me siento especial, me olvido de todos los problemas de mi vida
+            y es por eso que no me arrepiento de nada. Gracias por hacerme sentir así, tengo muchas ganas de volver a verte la semana que
             viene, a ver si se pasan rápido estos días. Quedamos donde nos hemos visto estos anteriores días. Te quiero. <br>
             Penny'.</div>  <br>
             <button id="anotar" class="button" type="submit">ANOTAR</button>`;
@@ -1446,11 +1446,12 @@ if (width <= 760) {
 
 
             } else if (pistaX.id === 'seis') {
-                historia.innerHTML = `<br><div id = "carta_cinco"> 'Deja de enviarme más cartas mentiroso! No quiero saber
-            nada más de ti, iré a aclarar las cosas pero tu y yo hemos terminado, me has hecho mucho daño y
+                historia.innerHTML = `<br><div id = "carta_cinco"> '
+                ¡Deja de enviarme más cartas, mentiroso! No quiero saber
+            nada más de ti, iré a aclarar las cosas pero tú y yo hemos terminado, me has hecho mucho daño y
             lo pagarás algún día, te lo prometo.<br>
-            Y deja de enviar a tu criado Eduardo a seguirme a todos lados o es que también tienes una aventura 
-            con él y esta celoso. Mentiroso, olvidame.'<div> <br>
+            Y deja de enviar a tu criado Eduardo a seguirme a todos lados, ¿o es que también tienes una aventura 
+            con él y está celoso? Mentiroso, olvidame.'<div> <br>
             <button id="anotar" class="button" type="submit">ANOTAR</button>`;
 
                 const carta_cinco = document.getElementById('carta_cinco')
@@ -1569,7 +1570,7 @@ if (width <= 760) {
                         document.body.style.cursor = "auto";
                     });
 
-                    historia.innerHTML = `"<i> Una imagen...Muestra la mesa del comedor y donde iría cada invitado
+                    historia.innerHTML = `"<i> Una imagen...Muestra la mesa del comedor y dónde iría cada invitado
             sentado. Pero ¿por qué unos con numero y otros con el nombre?.¿Y esas flechas?, ¿indicarán un sentido...?</i>"
             <br><br>
             <div id="situados">
@@ -1626,12 +1627,12 @@ if (width <= 760) {
             '-15 de enero 1981-<br>
             Hola Penny.<br>
             Me encantó lo del otro día pero tenemos que ser más cautos, la cena estuvo bien pero no me gusta que 
-            nos miré tanto la gente, prefiero ir más despacio, ir a tu casa o tu a la mia y preparar
+            nos miré tanto la gente, prefiero ir más despacio, ir a tu casa o tú a la mía y preparar
             algo nosotros juntos, además lo veo más romántico.<br>
             Por cierto ¿cómo va tu mujer?, ¿está mejor?. Deberías estar más tiempo con ella y cuidarla
-            al fin y al cabo es la que te ha cuidado cuando tu has estado mal y yo aunque quiera
-            estar todo el tiempo del mundo contigo te voy a esperar.<br>
-            Espero ansioso tu carta de respuesta. Un beso. T.'<br><br>
+            al fin y al cabo es la que te ha cuidado cuando tú has estado mal y yo aunque quiera
+            estar todo el tiempo del mundo contigo, te voy a esperar.<br>
+            Espero con ansiedad tu carta de respuesta. Un beso. T.'<br><br>
 
             <div id='huella'>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-fingerprint" viewBox="0 0 16 16">
@@ -1652,13 +1653,13 @@ if (width <= 760) {
                     huella.addEventListener('click', function () {
                         historia.innerHTML = `<i>" Vaya... parece que no fuí el único que encontró esta carta... son restos
                 de carmín.<br>
-                Esto puede ser el móvil del crimen. <br><br>
+                Este puede ser el móvil del crimen. <br><br>
                 <button id="anotar_cuaderno" class="button" type="submit">ANOTAR</button>`;
 
                         const anotar_cuaderno = document.getElementById('anotar_cuaderno');
 
                         anotar_cuaderno.addEventListener('click', function () {
-                            clue_dos.innerHTML = 'Posible móvil del crimen: engaño a su amante. Hay restos de carmín...Posible asesino/a.';
+                            clue_dos.innerHTML = 'Posible móvil del crimen: engañó a su amante. Hay restos de carmín...Posible asesino.';
                             cuaderno.appendChild(clue_dos);
                             carta_chico.style.color = 'white';
                             alert('Anotado');
@@ -1704,7 +1705,7 @@ if (width <= 760) {
 
             huella_libro.addEventListener('click', function () {
                 historia.innerHTML = `
-            <i>" Restos del mismo carmín que había en la carta. Veamos que dice el libro.<br>
+            <i>" Restos del mismo carmín que había en la carta. Veamos qué dice el libro.<br>
              '¡Claak!'.<br>
              Mmmm...Ha sonado un mecanismo, como si se abriese..."</i>`;
                 setTimeout(function () {
@@ -1712,8 +1713,8 @@ if (width <= 760) {
                     col.style.transform = "translateY(500px)";
                     col2.style.transition = 'transform 2s ease';
                     col2.style.transform = "translateY(500px)";
-                    historia.innerHTML = `<i> "¡Se esta bajando! Aquí está la puerta secreta, necesito un
-                código para abrirla."</i>`;
+                    historia.innerHTML = `<i> "¡Está bajando! Aquí está la puerta secreta, necesito un
+                                                código para abrirla."</i>`;
 
                     setTimeout(function () {
                         col.style.backgroundImage = '';
@@ -1809,7 +1810,7 @@ if (width <= 760) {
                                 }
                                 )
                             }
-                        }, 500);
+                        }, 700);
                     }, 2000);
                 }, 4000);
             })
@@ -1840,7 +1841,7 @@ if (width <= 760) {
                 col_6.style.position = "relative";
                 col_6.appendChild(beforeElement);
                 col_6.style.color = "white";
-                historia.innerHTML = `<i>" Veamos que hay aquí dentro..."</i>`;
+                historia.innerHTML = `<i>" Veamos qué hay aquí dentro..."</i>`;
 
 
             }, 3000);
@@ -1932,21 +1933,21 @@ if (width <= 760) {
                 fotos.style.color = 'white';
                 const comentario = document.getElementById('comentario');
                 setTimeout(function () {
-                    comentario.innerHTML = `<i> " Asi que la amante de Penny era Samanta.<br>
+                    comentario.innerHTML = `<i> " Así que la amante de Penny era Samanta.<br>
                 Se les ve felices...pero no quita que estuviera engañando a su mujer...<br>
-                Algo pasó, para que Samanta le mandara esa carta de ruptura tan rotunda.<br>
+                Algo pasó para que Samanta le mandara esa carta de ruptura tan rotunda.<br>
                 Bien, sigamos."</i>`;
                 }, 1500);
 
             }, { once: true });
             nota.addEventListener('click', function () {
                 historia.innerHTML = `<i> " Una pequeña nota..."</i><br>
-            'Samanta si alguna vez necesitas ayuda te dejo dinero en la caja fuerte de esta habitación, 
-            tú eres la única que sabe de la existencia de esta sala, cuantos momentos hemos pasado
+            'Samanta, si alguna vez necesitas ayuda te dejo dinero en la caja fuerte de esta habitación, 
+            tú eres la única que sabe de la existencia de esta sala, cuántos momentos hemos pasado
             aquí juntos...La combinación la cambié cuando me dejaste y me devolviste todas las cartas.
-            Buscálas, estan en el salón, y cuando las tengas la combincaión es el número del día
+            Búscalas, están en el salón, y cuando las tengas la combincaión es el número del día
             en que te envié la carta en orden temporal.<br>
-            Aunque pasara lo que pasara siempre te querré y te cuidaré como pueda. Se que algún día
+            Aunque pasó lo que pasó siempre te querré y te cuidaré como pueda. Se que algún día
             volverás y verás esto, espero que me perdones.'`;
                 nota.style.color = 'white';
             }, { once: true });
@@ -1956,15 +1957,15 @@ if (width <= 760) {
             - Queridos amigos,<br>
             Os escribo para invitaros a cenar el día 13 de Octubre con motivo de anunciaros
             algo muy importante.<br>
-            Vosotros sois mis únicos amigos, algunos ya os conoceis y los que no, será una gran oportunidad
+            Vosotros sois mis únicos amigos, algunos ya os conoceis y para los que no, será una gran oportunidad
             para que lo hagais, pasaremos una noche maravillosa.<br>
-            El menú de la cena será excepcional os lo aseguro. Os espero.<br>
+            El menú de la cena será excepcional, os lo aseguro. Os espero.<br>
             Para: Samanta, Toni, Maite, Ben, Jhon.-<br><br>
             <p id = "anuncio">
             </p>`;
                 const anuncio = document.getElementById('anuncio');
                 setTimeout(function () {
-                    anuncio.innerHTML = `<i>¿Qué sería eso tan importante que tenía que decirles?</i>`;
+                    anuncio.innerHTML = `<i>" ¿Qué sería eso tan importante que tenía que decirles? "</i>`;
                 }, 3000);
                 invitacion.style.color = 'white';
             }, { once: true });
@@ -2064,7 +2065,7 @@ if (width <= 760) {
             libros.remove();
 
             historia.innerHTML = `<i>" No me había dado cuenta, el bolso de Samanta, 
-        pero porque se lo ha dejado aquí...echaré un vistazo."</i>`;
+        pero por qué se lo ha dejado aquí...echaré un vistazo."</i>`;
             col.style.backgroundImage = "none";
             col2.style.backgroundImage = "url('img/bolso.jpg')";
             col2.style.backgroundPosition = 'center';
@@ -2103,13 +2104,13 @@ if (width <= 760) {
 
             amenaza.addEventListener('click', function () {
                 historia.innerHTML = `<i>" Parece un trozo de papel."</i><br><br>
-            'Como digas algo, tu serás mi próxima victima, tengo ganas, lo sé todo.'<br><br>
+            'Como digas algo, tú serás mi próxima victima, estás en mi punto de mira, lo sé todo.'<br><br>
             <div id="observacion">
             </div>`;
                 const observacion = document.getElementById('observacion');
                 setTimeout(function () {
-                    observacion.innerHTML = `<i>" ¿Alguien amenazó a Samanta? o ¿es que no le dió tiempo a 
-                darselo a quién la descubrió? "</i>`;
+                    observacion.innerHTML = `<i>" ¿Alguien amenazó a Samanta? o ¿es que no le dio tiempo a 
+                darselo a quien la descubrió? "</i>`;
                 }, 2500);
             });
             llave_salir.addEventListener('click', function () {
@@ -2119,18 +2120,18 @@ if (width <= 760) {
             })
             carta_pe.addEventListener('click', function () {
                 historia.innerHTML = `<i> " Una carta...¡¿Para Penny!? "</i><br><br>
-            'Penny, quería decirte que a pesar de todo el mal que me hiciste,
-            mentirme diciendo que cuidabas a tu mujer cuando tenías una aventura con Toni y a mí
-            me dejaste de lado diciéndome que me querías, a pesar de todo eso, yo si te quiero de verdad y
+            'Penny, quería decirte que a pesar de todo el daño que me hiciste,
+            mentirme diciendo que cuidabas a tu mujer cuando tenías una aventura con Toni y que
+            me dejaste de lado diciéndome que me querías, a pesar de todo eso, yo sí te quiero de verdad y
             hay algo que debes saber porque me preocupa.
             <br>
-            El otro día cuando aclaramos las cosas y nos despedimos, a medio camino recorde que me deje
-            el carmín en la mesa del comedor y decidí volver a por él aunque tu no estuvieras en casa ya 
+            El otro día, cuando aclaramos las cosas y nos despedimos, en el camino de vuelta recordé que me dejé
+            el carmín en la mesa del comedor y decidí volver a por él aunque tú no estuvieras en casa, ya 
             que conozco a tu personal, y al abrir la puerta del comedor vi a Toni, con el carmín en la mano
-            y vi que descubrió nuestra habitación secreta, en la otra mano llevaba un bote con algo verde pero no vi
-            bien que era, cerré la puerta y me fui corriendo.<br>
-            Te estoy totalmente sincera por favor cuando leas esto creeme, ha descubierto nuestra aventura
-            y no sé como se lo tomará. Habla con el cuando puedas y ten cuidado.'<br><br>
+            y vi que descubrió nuestra habitación secreta, en la otra mano llevaba un bote con un líquido verde pero no vi
+            bien qué era, cerré la puerta y me fui corriendo.<br>
+            Te estoy siendo totalmente sincera, por favor, cuando leas esto créeme, ha descubierto nuestra aventura
+            y no sé cómo se lo tomará. Habla con él cuando puedas y ten cuidado.'<br><br>
             <div id="observacion">
             </div>`;
                 const observacion = document.getElementById('observacion');
@@ -2385,7 +2386,7 @@ if (width <= 760) {
             col.style.backgroundPosition = 'left';
             col2.style.backgroundPosition = 'right';
             historia.innerHTML = `<i>" Tras una larga noche de investigación por fin he podido determinar
-        quié ha sido, cómo y por qué."</i>
+        quién ha sido, cómo y por qué."</i>
         <br>
         <div id='opciones'><br><br>
         El asesino es:
