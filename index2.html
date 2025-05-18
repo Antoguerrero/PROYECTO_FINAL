@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESCAPE ROOM</title>
+  <link href="css/estilos.css" rel="stylesheet">
+  <link rel="icon" href="./img/interrogacion.ico">
+</head>
+
+<body>
+  <div class="fondo">
+    <div class="container">
+      <h1 class="display-1">¿SERAS CAPAZ DE SALIR?</h1>
+    </div>
+    <button class="inicio" id="boton_inicial"><a class="ini" href="#nosotros">COMENZAR</a></button>
+  </div>
+
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid" id="color">
+        <a  class="navbar-brand" href="familia.php"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" id="persona" class="bi bi-person-badge-fill" viewBox="0 0 20 20">
+          <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1z"/>
+        </svg></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--aqui-->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item" >
+              <a class="nav-link active" aria-current="page" id="nosotros_uno" href="#nosotros">NOSOTROS</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" aria-current="page" id="tipos_uno" href="tipos2.html">TIPOS</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" aria-current="page" id="reservar_uno" href="reservar2.php">RESERVAR</a>
+            </li>
+          </ul>
+          <form class="d-flex" id="form">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" id="pruebaDos">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="contenido">
+    <div class="container2" id="luz">
+      <h1 class="titulo" id="nosotros">
+        <a id="prueba"><svg id="lamp" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+            class="bi bi-lamp" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M5.04.303A.5.5 0 0 1 5.5 0h5c.2 0 .38.12.46.303l3 7a.5.5 0 0 1-.363.687h-.002q-.225.044-.45.081a33 33 0 0 1-4.645.425V13.5a.5.5 0 1 1-1 0V8.495a33 33 0 0 1-4.645-.425q-.225-.036-.45-.08h-.003a.5.5 0 0 1-.362-.688l3-7ZM3.21 7.116A31 31 0 0 0 8 7.5a31 31 0 0 0 4.791-.384L10.171 1H5.83z" />
+            <path
+              d="M6.493 12.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.052.075l-.001.004-.004.01V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411" />
+          </svg></a>NOSOTROS
+      </h1>
+    </div>
+    <div class="container3">
+      <div class="row">
+        <div class="col" id="col">
+
+        </div>
+        <div class="col-6" id="col_6">
+          <div class="historia">
+            <p id="historia"> Antes de comenzar nuestra presentación y comentar a qué nos dedicamos, si bien por el
+              nombre
+              se puede intuir, te invitamos a hacer una mini prueba de lo que sería una experiencia de escape room con nosotros.<br>
+              Para una mejor vivencia, por favor primero lea el texto que aparezca y luego interactúa y busca los
+              objetos clave escondidos. ¡Cuidado, puede haber pistas falsas!
+              <br> ¿Serás capaz de adivinarlo? ¿Serás capaz de salir?
+              <br><br>
+              <i><b>Información:</b> la experiencia solo está en el apartdo de 'Nosotros' así que no hace falta
+                que investigues por los otros apartados de la web. Las zonas donde el cursor se transforme
+                en <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-search" viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg> es donde tendrás que buscar.<br> Dale a comenzar cuando estés preparado... y una
+                última cosa, recuerda bien: <br> La LUZ está cerca de NOSOTROS.
+              </i>
+            </p>
+
+            <button id="button" class="button" type="submit">COMENZAR</button>
+
+          </div>
+        </div>
+        <div class="col" id="col2">
+          <div class="muerto" id="muerto">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+  <script src="libs/boostrap/dist/js/bootstrap.min.js"></script>
+  <script src="./js/prueba.js"></script>
+  <script src="js/buscador.js"></script>
+
+</body>
+
+</html>
