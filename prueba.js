@@ -8,16 +8,16 @@ const width = window.innerWidth;
 if (width <= 760) {
     const boton_inicial = document.getElementById('boton_inicial');
     const form = document.getElementById('form');
-    if(boton_inicial){
+    if (boton_inicial) {
         boton_inicial.remove();
     }
-    
-    if(form){
+
+    if (form) {
         form.remove();
     }
     const contenido = document.getElementById('contenido');
-    if(contenido){
-    contenido.innerHTML = `<div class="container2">
+    if (contenido) {
+        contenido.innerHTML = `<div class="container2">
       <h1 class="titulo" id="nosotros">
         NOSOTROS
       </h1>
@@ -46,16 +46,16 @@ if (width <= 760) {
 
     const boton_inicial = document.getElementById('boton_inicial');
     const form = document.getElementById('form');
-    if(boton_inicial){
+    if (boton_inicial) {
         boton_inicial.remove();
     }
-    if(form){
+    if (form) {
         form.remove();
     }
-    
+
     const contenido = document.getElementById('contenido');
-    if(contenido){
-    contenido.innerHTML = `<div class="container2">
+    if (contenido) {
+        contenido.innerHTML = `<div class="container2">
       <h1 class="titulo" id="nosotros">
         NOSOTROS
       </h1>
@@ -107,7 +107,9 @@ if (width <= 760) {
     back.className = 'button';
     back.style.marginTop = "2%";
     const cuaderno = document.createElement("div");
+    const cuaderno2 = document.createElement("div");
     cuaderno.innerHTML = '<br><h1> CUADERNO </h1><br>';
+    cuaderno2.innerHTML = '<br><h1> CUADERNO </h1><br>';
     const mesa = document.createElement('div');
     const carta_chico = document.createElement('div');
     const clue = document.createElement('p');
@@ -116,6 +118,7 @@ if (width <= 760) {
     const nota_amor = document.createElement('div');
     const nota_amor_dos = document.createElement('div');
     const cambiar_clue_dos = document.createElement('p');
+    const armaCrimen = document.createElement('p');
     const asesino = document.createElement('p');
     const cuaderno_resolución = document.createElement('div');
 
@@ -216,7 +219,7 @@ if (width <= 760) {
             silueta.style.width = "100%";
             silueta.style.height = "100%";
             muerto.appendChild(silueta);
-            herida.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+            herida.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0q.164.544.371 1.038c.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8m.413 1.021A31 31 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
                             <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
                             </svg>`;
@@ -234,7 +237,7 @@ if (width <= 760) {
         <br>
         <br>
         <a class="navbar-brand" id="pruebaTres">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sign-dead-end-fill" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sign-dead-end-fill" viewBox="0 0 16 16">
         <path d="M5.116 6.28h.32c.395 0 .582.24.582.722 0 .48-.186.718-.581.718h-.321zm3.636.066.268.845h-.552l.27-.845zm1.327-.066h.32c.394 0 .582.24.582.722 0 .48-.186.718-.582.718h-.32zm-.792 3h.32c.395 0 .582.24.582.722 0 .48-.186.718-.581.718h-.32z"/>
         <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM4.782 6h.69c.596 0 .886.355.886.998S6.066 8 5.473 8h-.69zM7.82 7.72V8H6.571V6H7.82v.28h-.917v.57h.863v.268h-.863v.602zm.397.28h-.34l.688-2h.371l.689 2h-.352l-.177-.554h-.702L8.216 8Zm1.53-2h.69c.596 0 .886.355.886.998S11.03 8 10.436 8h-.69zm-2.923 4.72V11H5.575V9h1.248v.28h-.917v.57h.863v.268h-.863v.602zm.572.28h-.32V9h.294l.933 1.436h.014V9h.32v2h-.292l-.936-1.44h-.013zm1.56-2h.69c.596 0 .886.355.886.998S10.238 11 9.645 11h-.69z"/>
         </svg>
@@ -726,7 +729,7 @@ if (width <= 760) {
             //cajones.style.border = 'solid 2px white';
             cajones.style.width = '2rem';
             cajones.style.height = '2rem';
-            cajones.innerHTML = `<svg id ="volver_cajones" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
+            cajones.innerHTML = `<svg id ="volver_cajones" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
             <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"/>
             </svg>`;
             cajones.style.opacity = '0.5';
@@ -744,7 +747,7 @@ if (width <= 760) {
             //cuadro.style.border = 'solid 2px red';
             cuadro.style.width = '2rem';
             cuadro.style.height = '2rem';
-            cuadro.innerHTML = `<svg id ="ver_cuadro" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
+            cuadro.innerHTML = `<svg id ="ver_cuadro" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-image-fill" viewBox="0 0 16 16">
         <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
         </svg>`;
             cuadro.style.marginTop = '50%';
@@ -764,7 +767,7 @@ if (width <= 760) {
             llave.style.position = 'relative';
             llave.style.right = '200px';
             llave.style.color = 'rgb(229,229,220)';
-            llave.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+            llave.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
                             <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
                             </svg>`;
 
@@ -780,7 +783,7 @@ if (width <= 760) {
             armario.style.height = '2rem';
             armario.style.marginLeft = '15%';
             armario.style.marginTop = '110%';
-            armario.innerHTML = `<svg id="ver_armario" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
+            armario.innerHTML = `<svg id="ver_armario" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-inboxes-fill" viewBox="0 0 16 16">
             <path d="M4.98 1a.5.5 0 0 0-.39.188L1.54 5H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0A.5.5 0 0 1 10 5h4.46l-3.05-3.812A.5.5 0 0 0 11.02 1zM3.81.563A1.5 1.5 0 0 1 4.98 0h6.04a1.5 1.5 0 0 1 1.17.563l3.7 4.625a.5.5 0 0 1 .106.374l-.39 3.124A1.5 1.5 0 0 1 14.117 10H1.883A1.5 1.5 0 0 1 .394 8.686l-.39-3.124a.5.5 0 0 1 .106-.374zM.125 11.17A.5.5 0 0 1 .5 11H6a.5.5 0 0 1 .5.5 1.5 1.5 0 0 0 3 0 .5.5 0 0 1 .5-.5h5.5a.5.5 0 0 1 .496.562l-.39 3.124A1.5 1.5 0 0 1 14.117 16H1.883a1.5 1.5 0 0 1-1.489-1.314l-.39-3.124a.5.5 0 0 1 .121-.393z"/>
             </svg>`;
             col.appendChild(armario);
@@ -823,7 +826,7 @@ if (width <= 760) {
             libros.style.width = '2rem';
             libros.style.height = '2rem';
             libros.style.color = 'rgb(103,61,42)';
-            libros.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookshelf" viewBox="0 0 16 16">
+            libros.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookshelf" viewBox="0 0 16 16">
                             <path d="M2.5 0a.5.5 0 0 1 .5.5V2h10V.5a.5.5 0 0 1 1 0v15a.5.5 0 0 1-1 0V15H3v.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5M3 14h10v-3H3zm0-4h10V7H3zm0-4h10V3H3z"/>
                             </svg>`;
             libros.style.marginLeft = '35%';
@@ -848,7 +851,7 @@ if (width <= 760) {
             bolso.style.height = '2rem';
             bolso.style.marginLeft = '91%';
             bolso.style.marginTop = '-30%';
-            bolso.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
+            bolso.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-handbag-fill" viewBox="0 0 16 16">
                             <path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2M5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0z"/>
                             </svg>`;
             bolso.style.color = 'rgb(241,179,93)';
@@ -1713,7 +1716,7 @@ if (width <= 760) {
                     col.style.transform = "translateY(500px)";
                     col2.style.transition = 'transform 2s ease';
                     col2.style.transform = "translateY(500px)";
-                    historia.innerHTML = `<i> "¡Está bajando! Aquí está la puerta secreta, necesito un
+                    historia.innerHTML = `<i> "¡Está bajando! Aquí está la PUERTA SECRETA, necesito un
                                                 código para abrirla."</i>`;
 
                     setTimeout(function () {
@@ -1727,7 +1730,7 @@ if (width <= 760) {
 
                         setTimeout(function codigo() {
                             historia.innerHTML = `<br>
-                        <div id ="caja_fuerte">
+                        <div id ="caja_fuerte" class="puerta">
                          <div id="numeros">
                             <input type ="text" name="number" class="digi" id="number" placeholder="Tienes 3 intentos"><br><br>
                                 <button id="button1" class="button" type="button" onclick ="escribirNumero(1)">1</button>
@@ -1771,8 +1774,10 @@ if (width <= 760) {
                             //Dar estilo a la caja fuerte
                             caja_fuerte.style.border = 'solid 3px black';
                             caja_fuerte.style.borderRadius = '4px';
-                            caja_fuerte.style.background = 'rgb(52,52,52)';
-                            caja_fuerte.style.height = '40vh';
+                            caja_fuerte.style.backgroundImage = "url('img/puerta_metal.jpg')";
+                            caja_fuerte.style.backgroundSize = "cover";
+                            caja_fuerte.style.backgroundPosition = "center";
+                            caja_fuerte.style.height = '70vh';
                             caja_fuerte.style.width = '70%';
                             number.style.fontFamily = 'reloj';
                             number.style.margin = '3%';
@@ -2215,26 +2220,38 @@ if (width <= 760) {
             uno.style.textAlign = 'left';
             dos.style.textAlign = 'right';
 
-            mensaje_uno.innerHTML = '...';
+
+
+            mensaje_uno.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
             setTimeout(function () {
-                mensaje_uno.innerHTML = `<i>-"Eduardo, ¿me oyes?, ¿estas ahí? Soy el detective. "</i>`;
+
                 setTimeout(function () {
-                    mensaje_dos.innerHTML = `<br><br>...`;
+                    mensaje_dos.innerHTML = `<br><br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
 
             }, 1000);
 
             setTimeout(function () {
                 mensaje_dos.innerHTML = `<br><br>-'Sí detective dime.'`;
+
                 setTimeout(function () {
-                    mensaje_tres.innerHTML = `<br><br>...`;
+                    mensaje_tres.innerHTML = `<br><br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
             }, 3000);
 
             setTimeout(function () {
                 mensaje_tres.innerHTML = `<i>"-¿Usted había visto antes a Toni?,¿lo conocía?"</i>`;
+
                 setTimeout(function () {
-                    mensaje_cuatro.innerHTML = `<br><br>...`;
+                    mensaje_cuatro.innerHTML = `<br><br><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
             }, 7600);
 
@@ -2242,15 +2259,21 @@ if (width <= 760) {
                 mensaje_cuatro.innerHTML = `'-Sí señor, bueno empezó a venir a casa cuando enfermó
             la mujer de Penny, la verdad que es un buen hombre, a veces se quedaba cuidando a Rosa cuando
             Penny se tenía que ir a trabajar.'`;
+
                 setTimeout(function () {
-                    mensaje_cinco.innerHTML = `...`;
+                    mensaje_cinco.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
             }, 12600);
 
             setTimeout(function () {
                 mensaje_cinco.innerHTML = `<i>"-¿La cuidaba?"</i>`;
+
                 setTimeout(function () {
-                    mensaje_seis.innerHTML = `...`;
+                    mensaje_seis.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
             }, 16500);
 
@@ -2258,7 +2281,9 @@ if (width <= 760) {
                 mensaje_seis.innerHTML = `-'Sí señor, Toni es médico y traía medicinas especiales para
             la mujer de Penny.'`;
                 setTimeout(function () {
-                    mensaje_siete.innerHTML = `...`;
+                    mensaje_siete.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
                 mensaje_uno.remove();
                 mensaje_dos.remove();
@@ -2267,7 +2292,9 @@ if (width <= 760) {
             setTimeout(function () {
                 mensaje_siete.innerHTML = `-<i>"¿Medicinas especiales?...¿qué tipo de medicinas especiales? `;
                 setTimeout(function () {
-                    mensaje_ocho.innerHTML = `...`;
+                    mensaje_ocho.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
 
             }, 26000);
@@ -2276,14 +2303,18 @@ if (width <= 760) {
                 mensaje_ocho.innerHTML = `-'Sí señor, sobretodo iba siempre con un tarro con un líquido verde
             pero nunca supe que era exactamente supongo que hierbas especiales.' `;
                 setTimeout(function () {
-                    mensaje_nueve.innerHTML = `...`;
+                    mensaje_nueve.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
             }, 32000);
 
             setTimeout(function () {
                 mensaje_nueve.innerHTML = `-<i>"Jumm, Interesante y ¿le viste hacer algo sospechoso alguna vez?</i>" `;
                 setTimeout(function () {
-                    mensaje_diez.innerHTML = `...`;
+                    mensaje_diez.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
                 mensaje_tres.remove();
                 mensaje_cuatro.remove();
@@ -2295,7 +2326,9 @@ if (width <= 760) {
             le dije como siempre si le ayudaba a llevarlas al coche y me contestó muy borde que ni las tocara y que me fuera, fue un poco raro
             ,siempre había sido muy amable conmigo salvo ese día.' `;
                 setTimeout(function () {
-                    mensaje_once.innerHTML = `...`;
+                    mensaje_once.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                     mensaje_cinco.remove();
                     mensaje_seis.remove();
                 }, 500);
@@ -2305,7 +2338,9 @@ if (width <= 760) {
                 mensaje_once.innerHTML = `<i>("Podía ser el dinero de la caja fuerte, Samanta no mentía...".)<br>-"Vale muchas
             gracias Eduardo ya mismo termino y todo esto quedará resuelto."`;
                 setTimeout(function () {
-                    mensaje_doce.innerHTML = `...`;
+                    mensaje_doce.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5m-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5m12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5"/>
+                    </svg>`;
                 }, 500);
                 mensaje_siete.remove();
                 mensaje_ocho.remove();
@@ -2322,52 +2357,55 @@ if (width <= 760) {
                 eliminar_pista(clue_dos);
                 asesino.innerHTML = 'Asesino: Toni.'
                 cambiar_clue_dos.innerHTML = `Móvil del crimen: Venganza amorosa.`;
-                cuaderno.appendChild(cambiar_clue_dos);
-                cuaderno.appendChild(asesino);
+                armaCrimen.innerHTML = `Causa de la muerte: Envenenamiento.`;
+                cuaderno2.appendChild(asesino);
+                cuaderno2.appendChild(cambiar_clue_dos);
+                cuaderno2.appendChild(armaCrimen);
+                telefono.style.color = 'white';
+                const resolverDiv = document.createElement('div');
+
                 if (!modificado) {
                     alert('Se ha modificado el móvil del crimen en el cuaderno.');
                     modificado = true;
                 }
-                uno.remove();
-                dos.remove();
-                historia.innerHTML = `<i>" Al parecer Toni envenenó a la mujer de Penny aprovechando que
-            se pusó enferma y así poder tener una relación con Penny, lo que no sabía es que Penny tenía
-            una relación con Samanta y ese secreto le costó la vida por engañarle. Usó el mismo veneno que para matar
-            a Rosa, la mujer de Penny y ha intentado incriminar a Samanta."</i><br><br>
-            <div id="boton_resolver">
-            </div>
-            `;
                 if (!bool_resolver) {
                     alert('Veamos una última vez el cuaderno');
-                    mostrar_cuaderno4(historia, cuaderno, back);
-                    bool_resolver = true;
-                }
+                    mostrar_cuaderno4(historia, cuaderno2, back);
+                    //bool_resolver = true;
+                } else {
+
+                    historia.innerHTML = `<i>" Al parecer Toni envenenó a la mujer de Penny aprovechando que
+                        se pusó enferma y así poder tener una relación con Penny, lo que no sabía es que Penny tenía
+                        una relación con Samanta y ese secreto le costó la vida por engañarle. Usó el mismo veneno que para matar
+                        a Rosa, la mujer de Penny y ha intentado incriminar a Samanta."</i><br><br>
+                        <div id="boton_resolver">
+                        </div>
+                        `;
+                    const boton_resolver = document.getElementById('boton_resolver');
+                    boton_resolver.appendChild(resolverDiv);
+                    resolverDiv.innerHTML = '<button id="resolver" class="button" type="submit">RESOLVER</button>';
+                    const resolucion = document.getElementById('resolver');
 
 
-                telefono.style.color = 'white';
-                const resolver = document.createElement('div');
-                const boton_resolver = document.getElementById('boton_resolver');
-
-                if (bool_resolver) {
-                    resolver.innerHTML = '<button id="resolver" class="button" type="submit">RESOLVER</button>';
-                    boton_resolver.appendChild(resolver);
-                    resolver.addEventListener('click', function () {
+                    resolucion.addEventListener('click', function () {
                         resolver_todo();
                     });
                 }
-
+                uno.remove();
+                dos.remove();
 
                 function mostrar_cuaderno4(historia, book, back) {
                     historia.innerHTML = '';
                     historia.appendChild(book);
                     historia.appendChild(back);
+                    bool_resolver = true;
 
                     back.addEventListener('click', function () {
                         resolve();
                     });
                 }
 
-            }, 70000);
+            }, 66000);
 
 
         }
@@ -2419,7 +2457,7 @@ if (width <= 760) {
                 cuaderno_resolución.appendChild(arma);
                 opciones.innerHTML = `El móvil del crimen es:   
         <button id="opcion_uno" class="button" type="button" onclick ="escribirCausa('Dinero')" >DINERO</button>
-        <button id="opcion_dos" class="button" type="button" onclick ="escribirCausa('Amor')">AMOR</button>
+        <button id="opcion_dos" class="button" type="button" onclick ="escribirCausa('Amor')">VENGANZA AMOROSA</button>
         <button id="opcion_tres" class="button" type="button" onclick ="escribirCausa('Envidia')">ENVIDIA</button>`;
             }
 
@@ -2433,7 +2471,7 @@ if (width <= 760) {
                 if ((nombre_culpable.innerHTML !== `El asesino es Toni.<br>`) || (arma.innerHTML !== `El arma del crimen ha sido el Veneno.<br>`) || (motivo.innerHTML !== `El móvil del crimen fue el Amor`)) {
                     alert('Has fallado en la resolución.');
                     alert('Revisaré el cuaderno de nuevo');
-                    mostrar_cuaderno5(historia, cuaderno, back);
+                    mostrar_cuaderno5(historia, cuaderno2, back);
 
                 } else {
                     alert('¡Enhorabuena lo has completado con éxito!');
