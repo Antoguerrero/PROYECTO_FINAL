@@ -18,7 +18,7 @@
         </div>
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid" id="color">
-                <a class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30"
+                <a class="navbar-brand" href="login.php"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="30"
                         fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
                         <path
                             d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
@@ -52,7 +52,7 @@
     </header>
     <main>
         <div class="container2">
-            <h4> HAZ TU RESERVA AHORA </h4>
+            <h4> HAZ TU RESERVA AHORA O <a href="login.php">REGISTRATE</a> PARA OBTENER VENTAJAS </h4>
         </div>
         <form action="conexion.php" method="POST" id="formulario" class="formulario">
             <div class="campo">
@@ -99,12 +99,14 @@
 
             <div class="campo">
             <label for="tipo">Elige el escape room:</label>
+
+        
         
         <select id="tipo" name="tipo" required>
-            <option value="1">ASILO DE ARKHAM</option>
-            <option value="2">EL TESORO DE LOS INCAS</option>
-            <option value="3">JEDIS CONTRA EL IMPERIO</option>
-            <option value="4">SHERLOCK HOLMES Y EL MISTERIO DEL BIG BEN</option>
+            <option value="1" <?php if ($escape_preseleccionado == '1') echo 'selected'; ?>>ASILO DE ARKHAM</option>
+            <option value="2" <?php if ($escape_preseleccionado == '2') echo 'selected'; ?>>EL TESORO DE LOS INCAS</option>
+            <option value="3" <?php if ($escape_preseleccionado == '3') echo 'selected'; ?>>JEDIS CONTRA EL IMPERIO</option>
+            <option value="4" <?php if ($escape_preseleccionado == '4') echo 'selected'; ?>>SHERLOCK HOLMES Y EL MISTERIO DEL BIG BEN</option>
         </select>
         </div>
         <br>
@@ -127,7 +129,7 @@
 
         <div class="campo">
         <label for="fecha">Fecha:</label>
-        <input type="date" id="date" name="fecha" required>
+        <input type="date" id="date" name="fecha" required min="<?php echo date('Y-m-d'); ?>">
         <p><sub>(De lunes a sábado)</sub></p>
         </div> 
         <br><br>

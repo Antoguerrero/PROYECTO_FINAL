@@ -209,7 +209,7 @@
 
     <script src="libs/boostrap/dist/js/bootstrap.min.js"></script>
     <!--<script src="./js/prueba.js"></script>-->
-    <script src="js/buscador.js"></script>
+    <script src="js/buscador2.js"></script>
     <!--<script src="js/restriccion_hora.js"></script>-->
     <!--<script src="js/login.js"></script>-->
     <script src="js/familia.js"></script>
